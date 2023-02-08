@@ -1,0 +1,64 @@
+<div class="form-page">
+  <form [formGroup]="employeeform">
+  <div class="form-page__input">
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon"> <i class="pi pi-user"></i> </span>
+      <input type="text" formControlName="username" pInputText placeholder="Username">
+    </div>
+  </div>
+  <div class="form-page__input">
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon"></span>
+      <input type="text" formControlName="firstName" pInputText placeholder="First Name">
+    </div>
+  </div>
+  <div class="form-page__input">
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon"> </span>
+      <input type="text" formControlName="lastName" pInputText placeholder="Last Name">
+    </div>
+  </div>
+  <div class="form-page__input">
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon"> </span>
+      <p-calendar formControlName="birthDate" placeholder="Birth Date"></p-calendar>
+    </div>
+  </div>
+  <div class="form-page__input">
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon"> </span>
+      <input type="text" formControlName="email" pInputText placeholder="Email">
+    </div>
+  </div>
+  <div class="form-page__input">
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon"> </span>
+      <input type="text" formControlName="basicSalary" pInputText placeholder="Basic Salary">
+    </div>
+  </div>
+  <div class="form-page__input">
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon"> </span>
+      <input type="text" formControlName="status" pInputText placeholder="Status">
+    </div>
+  </div>
+  <div class="form-page__input">
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon"> </span>
+      <input type="text"  formControlName="group" pInputText placeholder="Group">
+    </div>
+  </div>
+  <div class="form-page__input">
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon"> </span>
+      <p-calendar formControlName="birthDate" placeholder="Description"></p-calendar>
+    </div>
+  </div>
+  
+  </form>
+  <!-- <button (click)="add()" *ngIf="!isEdit">Add</button>
+  <button (click)="edit()" *ngIf="isEdit">Edit</button> -->
+  <button  (click)="add()" pButton type="button" *ngIf="!isEdit"> Add</button>
+  <button (click)="edit()"  pButton type="button" *ngIf="isEdit"> Save</button>
+
+</div>

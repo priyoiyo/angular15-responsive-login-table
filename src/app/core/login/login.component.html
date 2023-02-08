@@ -1,0 +1,22 @@
+<div class="div login-screen">
+  <img src="assets/avatar-icon.png" alt="avatar"
+  class="login-screen__logo">
+  <div class="login-screen__username"> Hello Mr. Vegapunk</div>
+  <div class="login-screen__input">
+    <div class="p-input">
+      <input 
+      #password
+      type="password"
+      autofocus
+      pInputText
+      autocomplete="off"
+      class="p-inputtext-sm"
+      placeholder="Enter Password"
+      (keyup.enter)="onSignin()">
+
+    </div>
+  </div>
+  <div class="login-screen__button" *ngIf="password.value">
+    <button pButton type="button" (click)="onSignin()"> Sign In</button>
+  </div>
+</div>
